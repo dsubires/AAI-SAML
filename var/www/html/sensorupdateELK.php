@@ -23,7 +23,7 @@ $data = array(
 $payload = json_encode($data);
 
 // Prepare new cURL resource
-$ch = curl_init('http://localhost:9200/device_status/_doc/?pretty');
+$ch = curl_init('http://localhost:9200/data_preprocessing/_doc/?pretty');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLINFO_HEADER_OUT, true);
 curl_setopt($ch, CURLOPT_POST, true);
