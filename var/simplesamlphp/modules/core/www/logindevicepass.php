@@ -66,7 +66,6 @@ if (!empty($_REQUEST['username']) || !empty($password)) {
 	}*/
 
 	try {
-	//echo "tentou logar";
 		sspmod_core_Auth_DevicePassBase::handleLogin($authStateId, $username, $password);
 	} catch (SimpleSAML_Error_Error $e) {
 		/* Login failed. Extract error code and parameters, to display the error. */
@@ -101,6 +100,5 @@ if (isset($state['SPMetadata'])) {
 }
 
 $t->show();
-//echo "chuchu beleza";
 exit();
 

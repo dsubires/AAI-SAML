@@ -257,7 +257,6 @@ abstract class sspmod_core_Auth_DevicePassBase extends SimpleSAML_Auth_Source {
 	                         * state array as a parameter to the login form.
                         	*/
                 	        $url = SimpleSAML_Module::getModuleURL('core/logindevicepass.php');
-				//$varteste = "testetetetetete";
         	                $params = array('AuthState' => $id, 'challengeEncrypted' => $randomNumberEncrypted);
 
 	                        SimpleSAML_Utilities::redirectTrustedURL($url, $params);
